@@ -12,7 +12,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="antialiased bg-gray-50 dark:bg-gray-900">
+<body class="antialiased bg-white dark:bg-gray-900">
     {{-- top bar component --}}
     @include('layouts.topbar')
 
@@ -21,13 +21,11 @@
 
     {{-- Main section --}}
     <main class="p-4 md:ml-64 h-auto pt-20 min-h-screen">
-        <section class="bg-gray-50 dark:bg-gray-900">
-            <div class="mx-auto">
+        <section class="container mx-auto">
 
-                {{-- page content --}}
-                {{ $slot }}
-
-            </div>
+            {{-- page content --}}
+            {{ $slot }}
+            
         </section>
 
     </main>

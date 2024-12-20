@@ -1,5 +1,13 @@
+@props(['active'])
+
+@php
+$classes = ($active ?? false)
+? 'flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white bg-primary-50 hover:bg-primary-100 dark:hover:bg-primary-700 group'
+: 'flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group';
+@endphp
+
 <a
-    {{ $attributes->merge(['class' => 'flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group']) }}>
+    {{ $attributes->merge(['class' => $classes]) }}>
 
     @isset($icon)
         {{ $icon }}
