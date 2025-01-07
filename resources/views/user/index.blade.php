@@ -1,7 +1,7 @@
 <x-main-layout>
     <h2 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl md:mb-6 border-b pb-2">{{ __('Users') }}</h2>
 
-    <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
+    <div class="bg-white dark:bg-gray-800 relative border shadow-md sm:rounded-lg overflow-hidden">
 
         <div class="overflow-x-auto">
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
